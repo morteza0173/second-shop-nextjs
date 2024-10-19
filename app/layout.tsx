@@ -4,8 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Container from "@/components/global/Container";
 import Providers from "./Providers";
-import { ClerkProvider, SignIn } from "@clerk/nextjs";
-import { title } from "process";
+import { ClerkProvider } from "@clerk/nextjs";
 
 const vazirmatin = Vazirmatn({ subsets: ["arabic"] });
 
