@@ -10,4 +10,11 @@ export const links: NavLink[] = [
   { href: "/favorites", label: "علاقه مندی ها" },
   { href: "/cart", label: "سبد خرید" },
   { href: "/orders", label: "سفارشات" },
+  { href: "/admin/sales", label: "پنل مدیریت" },
+];
+
+export const adminLinks: NavLink[] = [
+  { href: "/admin/sales", label: "مدیریت فروش ها" },
+  { href: "/admin/products", label: "محصولات من" },
+  { href: "/admin/products/create", label: "اضافه کردن محصول جدید" },
 ];
