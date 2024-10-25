@@ -2,7 +2,7 @@ import EmptyList from "@/components/global/EmptyList";
 import { deleteProductAction, fetchAdminProducts } from "@/utils/action";
 import Link from "next/link";
 
-import { formatCurrency, formatCurrencyIr } from "@/utils/format";
+import { formatCurrencyIr } from "@/utils/format";
 import {
   Table,
   TableBody,
