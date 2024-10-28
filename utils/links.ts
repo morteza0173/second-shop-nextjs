@@ -8,6 +8,7 @@ export const links: NavLink[] = [
   { href: "/about", label: "درباره ی ما" },
   { href: "/products", label: "محصولات" },
   { href: "/favorites", label: "علاقه مندی ها" },
+  { href: "/reviews", label: "نظرات من" },
   { href: "/cart", label: "سبد خرید" },
   { href: "/orders", label: "سفارشات" },
   { href: "/admin/sales", label: "پنل مدیریت" },

@@ -52,3 +52,24 @@ function validateImageFile() {
       );
     }, "فایل باید یک تصویر باشد");
 }
+
+export const reviewSchema = z.object({
+  productId: z.string().refine((value) => value !== "", {
+    message: "ای محصول نمیتواند خالی باشد",
+  }),
+  authorName: z.string().refine((value) => value !== "", {
+    message: "نام نویسنده نمیتواند خالی باشد",
+  }),
+  authorImageUrl: z.string().refine((value) => value !== "", {
+    message: "تصویر نویسنده نمیتواند خالی باشد",
+  }),
+  rating: z.coerce
+    .number()
+    .int()
+    .min(1, { message: "حداقل امتیاز میتواند 1 باشد" })
+    .max(5, { message: "حداکثر امتیاز میتواند 5 باشد" }),
+  comment: z
+    .string()
+    .min(10, { message: "نظر باید حداقل شامل 10 حرف باشد" })
+    .max(1000, { message: "نظر باید حداکثر شامل 1000 حرف باشد" }),
+});
