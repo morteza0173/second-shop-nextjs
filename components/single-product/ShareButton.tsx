@@ -18,7 +18,6 @@ import {
   TelegramIcon,
   RedditShareButton,
   RedditIcon,
-  RedditShareCount,
 } from "react-share";
 
 function ShareButton({ productId, name }: { productId: string; name: string }) {
